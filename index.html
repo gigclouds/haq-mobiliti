@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAQ Mobiliti — Group Portfolio & Showcase</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#2E3350;
+    --navy-deep:#20233A;
+    --cream:#F5F1E8;
+    --card:#FCFAF5;
+    --slate:#C6CCDA;
+    --tan:#A7AFC4;
+    --ink:#2E3350;
+  }
+  body{ background:var(--cream); color:var(--ink); font-family:'Inter',sans-serif; }
+  .display{ font-family:'Raleway',sans-serif; font-weight:700; letter-spacing:0.01em; text-transform:uppercase; }
+  .display-italic{ font-family:'Raleway',sans-serif; font-weight:600; font-style:italic; }
+  .bleed-text{ font-size:clamp(2.6rem,7vw,6rem); line-height:0.9; }
+  .pill{ border-radius:999px; }
+  .eyebrow{ font-size:0.72rem; letter-spacing:0.14em; font-weight:600; color:var(--navy); }
+  .video-frame{ position:relative; width:100%; padding-top:56.25%; }
+  .video-frame iframe{ position:absolute; top:0; left:0; width:100%; height:100%; }
+</style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+
+  <header class="sticky top-0 z-40" style="background:var(--navy);">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="assets/haq.png" alt="HAQ Mobiliti Logo" class="w-10 h-15 rounded-lg object-cover flex-shrink-0">
+        <h1 class="display text-xl" style="color:var(--cream);">HAQ Mobiliti</h1>
+      </div>
+      <nav class="space-x-8 text-sm font-medium hidden sm:flex" style="color:var(--slate);">
+        <a href="#about" class="hover:opacity-70 transition">Perincian</a>
+        <a href="#team" class="hover:opacity-70 transition">Ahli Kumpulan</a>
+        <a href="#group-project" class="hover:opacity-70 transition">Projek Kumpulan</a>
+        <a href="#figma-prototype" class="hover:opacity-70 transition">Prototaip</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="about" class="relative overflow-hidden" style="background:var(--navy);">
+      <div class="max-w-6xl mx-auto px-6 pt-20 pb-16 flex flex-col lg:flex-row items-center gap-10">
+        <div class="w-full lg:w-1/2">
+          <span class="eyebrow" style="color:var(--tan);">Portfolio Projek Kursus</span>
+          <h2 class="display bleed-text mt-3" style="color:var(--cream);">
+            HAQ<br><span class="display-italic" style="color:var(--slate); text-transform:none;">Mobiliti.</span>
+          </h2>
+          <p class="mt-8 max-w-lg text-base leading-relaxed" style="color:var(--slate);">
+            HAQ Mobiliti ialah aplikasi mudah alih berasaskan Agentic AI yang membantu individu kurang upaya merancang perjalanan yang lebih selamat, mudah dan sesuai mengikut keperluan mereka menggunakan pengangkutan awam.
+          </p>
+        </div>
+        <div class="w-full lg:w-1/2">
+          <div class="video-frame rounded-xl overflow-hidden shadow-lg" style="border:1px solid var(--tan);">
+            <!-- Replace VIDEO_ID_HERE with your YouTube video ID -->
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+              title="HAQ Mobiliti Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="py-20 max-w-6xl mx-auto px-6">
+      <div class="mb-12">
+        <span class="eyebrow">Ahli Kumpulan</span>
+        <h3 class="display text-4xl mt-2" style="color:var(--navy);">Dibangunkan Oleh</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="rounded-2xl p-6 text-center flex flex-col justify-between shadow-sm" style="background:var(--card); border:1px solid var(--tan);">
+          <div>
+            <img src="assets/member1.jpg" alt="Member 1" class="w-28 h-28 rounded-full mx-auto mb-4 object-cover" style="border:3px solid var(--slate);">
+            <h4 class="font-bold text-base" style="color:var(--navy);">Anis Asna Binti Amin</h4>
+            <p class="text-xs mt-1 font-mono" style="color:var(--navy); opacity:0.6;">Matric: 2415028</p>
+          </div>
+          <div class="mt-6">
+            <a href="assets/doc1.pdf" target="_blank" class="pill w-full text-xs py-2.5 px-3 font-semibold transition flex items-center justify-center gap-2" style="background:var(--navy); color:var(--cream);">
+              <i class="fa-solid fa-file-pdf"></i> Dokumen PDF
+            </a>
+          </div>
+        </div>
+
+        <div class="rounded-2xl p-6 text-center flex flex-col justify-between shadow-sm" style="background:var(--card); border:1px solid var(--tan);">
+          <div>
+            <img src="assets/member2.jpg" alt="Member 2" class="w-28 h-28 rounded-full mx-auto mb-4 object-cover" style="border:3px solid var(--slate);">
+            <h4 class="font-bold text-base" style="color:var(--navy);">Nur Izzati Atiqah Binti Abd Razak</h4>
+            <p class="text-xs mt-1 font-mono" style="color:var(--navy); opacity:0.6;">Matric: 2418940</p>
+          </div>
+          <div class="mt-6">
+            <a href="assets/doc2.pdf" target="_blank" class="pill w-full text-xs py-2.5 px-3 font-semibold transition flex items-center justify-center gap-2" style="background:var(--navy); color:var(--cream);">
+              <i class="fa-solid fa-file-pdf"></i> Dokumen PDF
+            </a>
+          </div>
+        </div>
+
+        <div class="rounded-2xl p-6 text-center flex flex-col justify-between shadow-sm" style="background:var(--card); border:1px solid var(--tan);">
+          <div>
+            <img src="assets/member3.jpg" alt="Member 3" class="w-28 h-28 rounded-full mx-auto mb-4 object-cover" style="border:3px solid var(--slate);">
+            <h4 class="font-bold text-base" style="color:var(--navy);">Nur Narima Binti Mohd Abadi</h4>
+            <p class="text-xs mt-1 font-mono" style="color:var(--navy); opacity:0.6;">Matric: 241962</p>
+          </div>
+          <div class="mt-6">
+            <a href="assets/doc3.pdf" target="_blank" class="pill w-full text-xs py-2.5 px-3 font-semibold transition flex items-center justify-center gap-2" style="background:var(--navy); color:var(--cream);">
+              <i class="fa-solid fa-file-pdf"></i> Dokumen PDF
+            </a>
+          </div>
+        </div>
+
+        <div class="rounded-2xl p-6 text-center flex flex-col justify-between shadow-sm" style="background:var(--card); border:1px solid var(--tan);">
+          <div>
+            <img src="assets/member4.jpg" alt="Member 4" class="w-28 h-28 rounded-full mx-auto mb-4 object-cover" style="border:3px solid var(--slate);">
+            <h4 class="font-bold text-base" style="color:var(--navy);">Nor Farrah Fatihah Binti Mohd Sopian</h4>
+            <p class="text-xs mt-1 font-mono" style="color:var(--navy); opacity:0.6;">Matric: 2418940</p>
+          </div>
+          <div class="mt-6">
+            <a href="assets/doc4.pdf" target="_blank" class="pill w-full text-xs py-2.5 px-3 font-semibold transition flex items-center justify-center gap-2" style="background:var(--navy); color:var(--cream);">
+              <i class="fa-solid fa-file-pdf"></i> Dokumen PDF
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GROUP PROJECT -->
+    <section id="group-project" class="py-20" style="background:var(--slate);">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="mb-10">
+          <span class="eyebrow" style="color:var(--navy);">Hasil Projek Berkumpulan</span>
+          <h3 class="display text-4xl mt-2" style="color:var(--navy);">Projek Berkumpulan</h3>
+        </div>
+
+        <div class="rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-10 shadow-md" style="background:var(--card);">
+  <div class="w-full md:w-1/2 flex items-center justify-center rounded-xl h-52 md:h-72 cursor-pointer hover:opacity-90 transition overflow-hidden" style="border:1px solid var(--tan); background:var(--navy);">
+    <img src="assets/haq-mobiliti-logo.jpeg" alt="HAQ Mobiliti Logo" class="w-full h-full object-cover">
+  </div>
+          <div class="w-full md:w-1/2 space-y-4">
+            <h4 class="display text-2xl" style="color:var(--navy);">Infografik & Laporan Projek Berkumpulan</h4>
+            <p class="text-sm leading-relaxed" style="color:var(--navy); opacity:0.8;">
+                Projek ini menggabungkan hasil kajian daripada semua bahagian penyelidikan ke dalam infografik berkumpulan dan laporan akhir projek bagi HAQ Mobiliti.            </p>
+            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+              <a href="assets/group-infographic.pdf" target="_blank" class="pill text-white text-sm py-3 px-5 font-semibold transition flex items-center justify-center gap-2" style="background:var(--navy);">
+                <i class="fa-solid fa-file-pdf"></i> Infografik PDF
+              </a>
+              <a href="assets/group-report.pdf" target="_blank" class="pill text-sm py-3 px-5 font-semibold transition flex items-center justify-center gap-2" style="background:var(--tan); color:var(--navy-deep);">
+                <i class="fa-solid fa-file-pdf"></i> Laporan PDF Kumpulan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIGMA PROTOTYPE -->
+    <section id="figma-prototype" class="py-20 max-w-6xl mx-auto px-6">
+      <div class="mb-10">
+        <span class="eyebrow">Reka Bentuk & Prototaip</span>
+        <h3 class="display text-4xl mt-2" style="color:var(--navy);">Prototaip Figma</h3>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-md" style="border:1px solid var(--tan); background:var(--card);">
+        <iframe
+          src="https://storm-dill-78750988.figma.site"
+          title="HAQ Mobiliti Figma Prototype"
+          class="w-full"
+          style="height:650px; border:none;"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-8 text-center text-xs" style="background:var(--navy-deep); color:var(--slate);">
+    <p>HAQ Mobiliti &bull; Section 07 Project Portfolio &bull; Built with HTML, Tailwind CSS & JavaScript</p>
+  </footer>
+
+  <div id="mediaModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4" style="background:rgba(32,35,58,0.85); backdrop-filter:blur(4px);">
+    <div class="rounded-2xl max-w-4xl w-full max-h-[90vh] flex flex-col overflow-hidden shadow-2xl" style="background:var(--card);">
+      <div class="px-6 py-4 flex justify-between items-center" style="border-bottom:1px solid var(--tan);">
+        <h3 id="modalTitle" class="display text-lg" style="color:var(--navy);">Preview</h3>
+        <button onclick="closeModal()" class="text-xl font-bold px-2" style="color:var(--navy);">&times;</button>
+      </div>
+      <div class="p-4 overflow-auto flex justify-center items-center" style="background:var(--cream);">
+        <img id="modalImage" src="" alt="Infographic Preview" class="max-h-[70vh] object-contain rounded">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(title, src, type) {
+      document.getElementById('modalTitle').innerText = title;
+      const imgElem = document.getElementById('modalImage');
+      imgElem.src = src;
+      document.getElementById('mediaModal').classList.remove('hidden');
+    }
+    function closeModal() {
+      document.getElementById('mediaModal').classList.add('hidden');
+      document.getElementById('modalImage').src = '';
+    }
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+</body>
+</html>
